@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cities",
+  "info": {
+    "name": "City",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "city_name": {
+      "type": "string"
+    },
+    "flights": {
+      "via": "city_to",
+      "collection": "flight"
+    }
+  }
+}
